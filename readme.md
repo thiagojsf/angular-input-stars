@@ -7,7 +7,7 @@ Look!  A [demo](http://lab.rafamello.com/angular-input-stars)!
 ## Installation via bower
 
 ```bash
-bower install angular-input-stars
+bower install angular-input-stars-titled
 ```
 
 Inject it
