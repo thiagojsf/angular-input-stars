@@ -22,6 +22,12 @@ Simple usage
 ```
 
 Customize the **base**, **empty**, **hover**, **half** and **full** and  icon classes via attributes
+```javascript
+
+$scope.YourArrayOfTitles = ["Bad", "Regular", "Good", "Awesome"];
+
+
+```
 ```html
 <input-stars
     max="5"
