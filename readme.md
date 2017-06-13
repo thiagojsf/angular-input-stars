@@ -32,6 +32,7 @@ Customize the **base**, **empty**, **hover**, **half** and **full** and  icon cl
     icon-full="fa-star" 
     icon-hover-full="fa-star" 
     ng-model="YourCtrl.property"
+    ng-titles="YourArrayOfTitles"
     ></input-stars>
 ```
 > Unlike icon-base, on icon-full, icon-hover and icon-empty you must specify only one class, but that is all you need : ]

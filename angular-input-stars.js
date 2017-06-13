@@ -8,16 +8,17 @@ angular.module('angular-input-stars', [])
             restrict: 'EA',
             replace: true,
             template: '<ul ng-class="listClass">' +
-            '<li ng-touch="paintStars($index)" ng-mouseenter="paintStars($index, true, $event)" ng-mouseleave="unpaintStars($index, false)" ng-repeat="item in items track by $index">' +
+            '<li ng-touch="paintStars($index)" title="{{ titles[$index] }}" ng-mouseenter="paintStars($index, true, $event)" ng-mouseleave="unpaintStars($index, false)" ng-repeat="item in items track by $index">' +
             '<i  ng-class="getClass($index)" ng-click="setValue($index, $event)"></i>' +
             '</li>' +
             '</ul>',
             require: 'ngModel',
             scope:{
-                bindModel:'=ngModel'
+                bindModel:'=ngModel',
+                titles:'=ngTitles'
             },
             link: link
-        };
+        }
 
         return directive;
 
