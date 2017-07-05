@@ -13,10 +13,7 @@ angular.module('angular-input-stars', [])
             '</li>' +
             '</ul>',
             require: 'ngModel',
-            scope:{
-                bindModel:'=ngModel',
-                titles:'=ngTitles'
-            },
+            scope: true,
             link: link
         }
 
